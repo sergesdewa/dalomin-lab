@@ -1,0 +1,21 @@
+# Captures : ignorees par defaut, autorisees seulement dans les dossiers cures
+*.pcap
+*.pcapng
+!series/*/captures/*.pcap
+!series/*/captures/*.pcapng
+
+# Rien de sensible ne doit arriver ici, mais ceinture et bretelles
+*.key
+*.pem
+*.pfx
+*.p12
+id_*
+!id_*.md
+secrets/
+*credentials*
+
+# Bruit
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
